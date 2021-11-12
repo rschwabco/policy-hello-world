@@ -12,3 +12,13 @@ allowed {
 	some i
 	user_roles[i] == "admin"
 }
+
+visible {
+	some i
+	user_roles[i] == "admin"
+}
+
+enabled {
+	some i
+	user_roles[i] == "admin"
+}
