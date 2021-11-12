@@ -1,5 +1,6 @@
 package asertodemo.GET.api.protected
 
+import input.policy.path
 import input.user.attributes.roles as user_roles
 
 default allowed = false
@@ -10,15 +11,15 @@ default enabled = false
 
 allowed {
 	some i
-	user_roles[i] == "admin"
+	data.roles.roles[user_roles[i]].perms[path].allowed
 }
 
 visible {
 	some i
-	user_roles[i] == "admin"
+	data.roles.roles[user_roles[i]].perms[path].visible
 }
 
 enabled {
 	some i
-	user_roles[i] == "admin"
+	data.roles.roles[user_roles[i]].perms[path].enabled
 }

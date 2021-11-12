@@ -1,0 +1,33 @@
+{
+  "roles": {
+    "user": {
+      "description": "A user with no privlages",
+      "perms": {
+        "asertodemo.GET.api.protected": {
+          "allowed": false,
+          "visible": true,
+          "enabled": false
+        }
+      }
+    },
+    "editor": {
+      "description": "A user with no privlages",
+      "perms": {
+        "asertodemo.GET.api.protected": {
+          "allowed": true,
+          "visible": true,
+          "enabled": false
+        }
+      }
+    },
+    "admin": {
+      "perms": {
+        "asertodemo.GET.api.protected": {
+          "allowed": true,
+          "visible": true,
+          "enabled": true
+        }
+      }
+    }
+  }
+}
