@@ -3,7 +3,7 @@ package asertodemo.GET.api.protected
 import input.policy.path
 import input.user.attributes.roles as user_roles
 
-default allowed = false
+default allowed = true
 
 default visible = false
 
