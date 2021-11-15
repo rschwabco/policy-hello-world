@@ -1,11 +1,11 @@
 {
   "roles": {
-    "user": {
+    "viewer": {
       "description": "A user with no privlages",
       "perms": {
         "asertodemo.GET.api.protected": {
           "allowed": false,
-          "visible": true,
+          "visible": false,
           "enabled": false
         }
       }
@@ -14,9 +14,9 @@
       "description": "A user with no privlages",
       "perms": {
         "asertodemo.GET.api.protected": {
-          "allowed": true,
-          "visible": true,
-          "enabled": false
+          "allowed": false,
+          "visible": false,
+          "enabled": true
         }
       }
     },

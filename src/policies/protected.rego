@@ -11,15 +11,15 @@ default enabled = false
 
 allowed {
 	some i
-	data.roles.roles[user_roles[i]].perms[path].allowed
+	data.roles[user_roles[i]].perms[path].allowed
 }
 
 visible {
 	some i
-	data.roles.roles[user_roles[i]].perms[path].visible
+	data.roles[user_roles[i]].perms[path].visible
 }
 
 enabled {
 	some i
-	data.roles.roles[user_roles[i]].perms[path].enabled
+	data.roles[user_roles[i]].perms[path].enabled
 }
