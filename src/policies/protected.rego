@@ -13,13 +13,3 @@ allowed {
 	some i
 	data.roles[user_roles[i]].perms[path].allowed
 }
-
-visible {
-	some i
-	data.roles[user_roles[i]].perms[path].visible
-}
-
-enabled {
-	some i
-	data.roles[user_roles[i]].perms[path].enabled
-}
