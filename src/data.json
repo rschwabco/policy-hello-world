@@ -13,7 +13,7 @@
       "perms": {
         "asertodemo.GET.api.protected": {
           "allowed": false,
-          "visible": false,
+          "visible": true,
           "enabled": true
         }
       }
