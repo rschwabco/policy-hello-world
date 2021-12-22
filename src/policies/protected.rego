@@ -1,6 +1,7 @@
 package asertodemo.GET.api.protected
 
 import input.user.attributes.roles as user_roles
+import input.user.attributes.properties as user_properties
 
 default allowed = false
 
@@ -21,4 +22,8 @@ visible {
 enabled {
 	some i
 	data.roles[user_roles[i]].perms[path].enabled
+}
+
+visible {
+	user_properties.location == "United States"
 }
